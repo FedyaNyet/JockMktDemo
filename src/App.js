@@ -77,7 +77,9 @@ const StockEventHeader = ({sort, onSortChange}) => {
         ['fantasy_points_scored', 'Points Scored'],
         ['last_price', 'Price']
       ].map(([column, title]) =>
-        <div key={column} onClick={() => updateSort(column)}>
+        <div key={column}
+             className="sortable"  
+             onClick={() => updateSort(column)}>
           <strong>
             {title}
             <Arrow direction={getDirection(column)}/>

@@ -9,6 +9,10 @@ body {
   flex-wrap: nowrap;
 }
 
+.sortable{
+  cursor: pointer;
+}
+
 .eventList {
   list-style-type: none;
 }

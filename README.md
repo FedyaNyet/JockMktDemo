@@ -1,5 +1,11 @@
 # Jock MKT Demo
 
+This application was developed using:
+```
+node --version v11.11.0
+npm --version 6.7.0
+```
+
 Before getting started, install the appliction dependencies that are required to run the app.
 Dependencies are installed into the `/node_modules` folder. In the project directory, run:
 

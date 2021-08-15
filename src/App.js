@@ -7,6 +7,7 @@ const ASC = 1;
 const DESC = -1;
 const DEAFULT_SORT = {column:"last_price", direction:DESC};
 const DATA = [...data.event_stocks].map(s => {
+  // parse last_price to float to allow numeric sort.
   s.last_price = parseFloat(s.last_price);
   return s;
 })
@@ -20,8 +21,8 @@ export const App = () => {
 
   // apply search filter
   if (!!filter) {
-    stocks = stocks.filter((ev) => 
-      ev.stock.name.toLowerCase().includes(filter.toLowerCase())
+    stocks = stocks.filter(({stock:{name}}) => 
+      name.toLowerCase().includes(filter.toLowerCase())
     )
   }
 

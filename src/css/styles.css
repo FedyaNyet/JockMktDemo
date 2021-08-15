@@ -1,0 +1,51 @@
+body {
+  font-size: 20px;
+  padding:10px;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.eventList {
+  list-style-type: none;
+}
+
+.eventItem {    
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.eventItem:first-child{
+  height: 3em;
+}
+
+img {
+  height:100px;
+}
+
+.eventItem > div {
+  margin-top: 1rem;
+  flex: 1
+}
+
+.eventItem > div:first-child {
+  padding-left: 100px;
+}
+
+.arrow{
+  width: .9em;
+  display: inline-block;
+  height: .9em;
+  font-size: .9em;
+}
+
+input {
+  font-size: 2em;
+  padding:.5em;
+}

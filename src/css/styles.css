@@ -27,6 +27,9 @@ body {
 
 img {
   height:100px;
+  border-radius: 50px;
+  border: 2px solid black;
+
 }
 
 .eventItem > div {
@@ -35,9 +38,10 @@ img {
   padding:10px;
 }
 
-.eventItem > div:first-child {
-  /* pad header for image */
-  padding-left: 110px;
+.eventItem > div:first-child {    
+  display: flex;
+  justify-content: center;
+  min-width: 104px;
 }
 
 .arrow{
@@ -58,10 +62,6 @@ input {
   }
 
   .eventItem > div:first-child {
-    padding-left: 0px !important;
-  }
-
-  img {
-      display: none !important;
+    display: none !important;
   }
 }

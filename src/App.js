@@ -71,6 +71,7 @@ const StockEventHeader = ({sort, onSortChange}) => {
 
   return (
     <li className="eventItem">
+      <div>{/* photo placeholder */}</div>
       {[['name', 'Name'],
         ['fantasy_points_projected', 'Projected Points'], 
         ['fantasy_points_scored', 'Points Scored'],
@@ -108,7 +109,7 @@ const StockEvent = ({
   }
 }) => (
   <li className="eventItem">
-    <img alt={name} src={image_url}/>
+    <div><img alt={name} src={image_url}/></div>
     <div>{name}</div>
     <div>{fantasy_points_projected}</div>
     <div>{fantasy_points_scored || '-'}</div>

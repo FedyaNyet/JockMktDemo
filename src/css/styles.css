@@ -31,11 +31,13 @@ img {
 
 .eventItem > div {
   margin-top: 1rem;
-  flex: 1
+  flex: 1;
+  padding:10px;
 }
 
 .eventItem > div:first-child {
-  padding-left: 100px;
+  /* pad header for image */
+  padding-left: 110px;
 }
 
 .arrow{
@@ -48,4 +50,18 @@ img {
 input {
   font-size: 2em;
   padding:.5em;
+}
+
+@media (max-width: 470px) {
+  .eventItem {
+    min-height: 60px;
+  }
+
+  .eventItem > div:first-child {
+    padding-left: 0px !important;
+  }
+
+  img {
+      display: none !important;
+  }
 }
